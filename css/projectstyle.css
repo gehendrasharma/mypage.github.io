@@ -1,91 +1,44 @@
-.header-nav__list {
-  display: flex;
-  margin: 0;
-  padding: 0; }
+/* ------------------------------------
+   Recent Projects
+*/
+ul {
+  list-style-type: none;
+}
 
-.header-nav__item {
-  margin: 0 0 0 4rem;
-  padding: 0;
-  list-style: none; }
-  .header-nav__item:last-child {
-    margin-right: 0; }
+li {
+  display: inline;
+}
 
-.header-nav__link {
-  color: #3b3a3a;
-  font-size: 1.8rem;
-  line-height: 1.8rem; }
-  .header-nav__link:hover {
-    text-decoration: none; }
+.row.recent-proj {
+  margin-top: 50px;
+}
+.recent-proj .pics img {
+  display: block;
+  height: 250px;
+  margin: auto;
+}
 
-.header-nav__link--light {
-  color: #c9c9c9;
-  font-weight: 200; }
+.section {
+  margin-top: 50px;
+}
 
-.header-nav__link:hover,
-.header-nav__link--active {
-  color: #63d488; }
 
-.header-hamburger {
-  display: none;
-  height: 6rem;
-  width: 6rem;
-  justify-content: flex-end;
-  align-items: center; }
-  .header-hamburger svg {
-    height: 1rem;
-    display: block; }
-    .header-hamburger svg * {
-      fill: #3b3a3a; }
+/* ------------------------------------
+   Front-End Projects
+*/
+.front-end-project .pics {
+  width: 500px;
+  height: 250px;
+}
 
-@media (max-width: 480px) {
-  .header {
-    height: 10rem;
-    padding: 2rem 0; }
-  .header-title,
-  .header-subtitle {
-    font-size: 2rem;
-    line-height: 2rem; }
-  .header-nav {
-    display: none; }
-  .header-hamburger {
-    display: flex; } }
+.col-md-6 .front-end-project {
+  margin-top: 50px;
+}
 
-@media (max-width: 768px) {
-  .header-nav__item {
-    margin: 0 0 0 3rem; } }
 
-.header-overlay {
-  transition: all 200ms linear;
-  visibility: hidden;
-  opacity: 0;
-  padding: 3.5rem 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.975);
-  display: flex;
-  z-index: 15; }
-  .header-overlay .header-nav {
-    display: block; }
-  .header-overlay .header-nav__list {
-    flex-direction: column; }
-  .header-overlay .header-nav__item {
-    transition: all 250ms linear 250ms;
-    transform: translateY(1rem);
-    margin: 0 0 2.75rem 0;
-    opacity: 0; }
-  .header-overlay .header-nav__link {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-    font-weight: 200; }
-
-.header-wrapper--show-overlay .header-overlay {
-  visibility: visible;
-  opacity: 1; }
-
-.header-wrapper--show-overlay .header-nav__item {
-  opacity: 1;
-  transform: translateY(0); }
+/* ------------------------------------
+   GitHub Button
+*/
+.github-btn {
+  margin-top: 50px;
+}
